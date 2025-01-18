@@ -206,3 +206,67 @@ body {
   border-radius: 8px; /* Optional: Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
 }
+/* Our Experts Section */
+#our-experts {
+  padding: 60px 80px; /* Space around the section */
+  background-color: #f9f9f9; /* Light background color */
+  text-align: center; /* Center-align headings */
+}
+
+/* Section Headers */
+.section-header h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #BD945A; /* Theme color */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+/* Team Members Container */
+.team-container {
+  display: flex;
+  justify-content: space-between; /* Space between team members */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  gap: 20px; /* Space between rows */
+}
+
+/* Individual Team Member Card */
+.team-member {
+  flex: 1; /* Adjust size of each card */
+  max-width: 23%; /* Ensure 4 cards fit in a row */
+  text-align: center; /* Center-align content */
+}
+
+.team-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin-bottom: 15px;
+}
+
+/* Social Media Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between icons */
+}
+
+.social-links a {
+  color: #BD945A; /* Icon color matching theme */
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #088178; /* Hover color */
+}

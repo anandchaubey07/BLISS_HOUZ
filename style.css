@@ -273,3 +273,82 @@ body {
   color: #088178; /* Hover color */
 }
 
+/* Amenities Section Styling */
+/* Section Container */
+#amenities-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 80px;
+  background-color: #F1EDDA; /* Matches previous page background */
+  width: 100%; /* Full-width container */
+  box-sizing: border-box;
+}
+
+/* Left Side: Text Section */
+.amenities-left {
+  flex: 1; /* Takes up half the width */
+  padding-right: 40px; /* Space between text and icons */
+}
+
+.amenities-left h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #BD945A; /* Theme color for headings */
+  margin-bottom: 20px;
+}
+
+.amenities-left p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333; /* Text color for better readability */
+}
+
+/* Right Side: Icon Section */
+.amenities-right {
+  flex: 1; /* Takes up half the width */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 20px; /* Space between boxes */
+}
+
+/* Individual Amenity Box */
+.amenity-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #BD945A; /* Border matching theme */
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  background-color: #ffffff;
+}
+
+.amenity-box:hover {
+  background-color: #BD945A; /* Change to theme color */
+  color: #fff;
+}
+
+.amenity-box i {
+  font-size: 2.5rem;
+  color: #BD945A;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.amenity-box:hover i {
+  color: #fff; /* Change icon color on hover */
+}
+
+.amenity-box h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.amenity-box:hover h3 {
+  color: #fff; /* Change heading color on hover */
+}

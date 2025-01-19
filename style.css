@@ -158,7 +158,7 @@ body {
   justify-content: space-between;
   padding: 40px 80px;
   gap: 40px; /* Space between text and images */
-  background-color: #f9f9f9; /* Light background color */
+  background-color: #FFFFFF /* Light background color */
 }
 
 /* Left Side Content */
@@ -206,10 +206,12 @@ body {
   border-radius: 8px; /* Optional: Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
 }
+
+
 /* Our Experts Section */
 #our-experts {
   padding: 60px 80px; /* Space around the section */
-  background-color: #f9f9f9; /* Light background color */
+  background-color: #F4F1ED; /* Light background color */
   text-align: center; /* Center-align headings */
 }
 
@@ -270,3 +272,4 @@ body {
 .social-links a:hover {
   color: #088178; /* Hover color */
 }
+

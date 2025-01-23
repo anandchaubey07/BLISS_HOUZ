@@ -275,80 +275,206 @@ body {
 
 /* Amenities Section Styling */
 /* Section Container */
-#amenities-section {
+/* Amenities Section */
+/* Overall container */
+/* Typing Effect */
+/* General Body and Container Styles */
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Typing Effect without cursor */
+#for-residents {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 40px; /* Slightly smaller size */
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.typing-effect {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1a1a1a;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 6s steps(30) 1s forwards, fadeout 0s 4s forwards;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 16ch; /* Adjust based on character count */
+  }
+}
+
+@keyframes fadeout {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Full Page Layout */
+/* General Styles */
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Typing Effect without cursor */
+#for-residents {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 40px; /* Slightly smaller size */
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.typing-effect {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1a1a1a;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(30) 1s forwards, fadeout 0s 4s forwards;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 16ch; /* Adjust based on character count */
+  }
+}
+
+@keyframes fadeout {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Full Page Layout */
+#what-we-offer {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px 80px;
-  background-color: #F1EDDA; /* Matches previous page background */
-  width: 100%; /* Full-width container */
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #f4f4f4;
   box-sizing: border-box;
 }
 
-/* Left Side: Text Section */
-.amenities-left {
-  flex: 1; /* Takes up half the width */
-  padding-right: 40px; /* Space between text and icons */
-}
-
-.amenities-left h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #BD945A; /* Theme color for headings */
+/* Top Section */
+#text-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e3e6f3;
   margin-bottom: 20px;
 }
 
-.amenities-left p {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #333; /* Text color for better readability */
+#text-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1a1a1a;
 }
 
-/* Right Side: Icon Section */
-.amenities-right {
-  flex: 1; /* Takes up half the width */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-  gap: 20px; /* Space between boxes */
+#text-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1a1a1a;
 }
 
-/* Individual Amenity Box */
-.amenity-box {
+/* Content Section */
+#content-container {
+  display: flex;
+  width: 100%;
+  flex: 1; /* Ensures the remaining height is filled */
+}
+
+#left-side {
+  width: 50%;
+  height: 100%; /* Ensures image fills the left side */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#left-side img.intro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#right-side {
+  width: 50%;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  border: 2px solid #BD945A; /* Border matching theme */
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  justify-content: space-evenly;
+}
+
+.icon-box {
   background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.amenity-box:hover {
-  background-color: #BD945A; /* Change to theme color */
-  color: #fff;
+.icon-box:hover .icon {
+  opacity: 0;
 }
 
-.amenity-box i {
-  font-size: 2.5rem;
-  color: #BD945A;
-  margin-bottom: 10px;
-  transition: color 0.3s ease-in-out;
+.icon-box:hover .content {
+  opacity: 1;
 }
 
-.amenity-box:hover i {
-  color: #fff; /* Change icon color on hover */
+.icon {
+  font-size: 50px;
+  color: #088178;
+  transition: opacity 0.3s ease;
+  text-align: center;
 }
 
-.amenity-box h3 {
-  font-size: 1.2rem;
+.content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding-top: 20px;
+}
+
+.content h3 {
+  font-size: 24px;
   font-weight: bold;
-  color: #333;
-  margin-top: 10px;
-  transition: color 0.3s ease-in-out;
+  margin-bottom: 15px;
+  color: #088178;
 }
 
-.amenity-box:hover h3 {
-  color: #fff; /* Change heading color on hover */
+.content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
 }
